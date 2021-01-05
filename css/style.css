@@ -1,0 +1,238 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F8FBFF;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0px auto;
+}
+
+.container p {
+    margin: 0 auto;
+    padding: 50px 10px;
+    text-align: center;
+    font-size: 50px;
+    background: linear-gradient(180deg, #008BE6 0%, #6C63FF 100%);
+    color: white;
+}
+
+.container ol {
+    margin: 50px;
+    font-size: 26px;
+}
+
+.container ol li {
+    margin: 50px;
+}
+
+.container ol .dimensions {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 'width height''urine urine';
+    grid-row-gap: 25px;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+.container ol .dimensions .width {
+    grid-area: width;
+    text-align: center;
+}
+
+.container ol .dimensions .height {
+    grid-area: height;
+    text-align: center;
+}
+
+.container ol .dimensions .chckBox {
+    grid-area: urine;
+    text-align: center;
+}
+
+.height input,
+.width input {
+    padding: 10px;
+    margin: 0 15px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #fff;
+    color: #008BE6;
+    border: 1px solid black;
+}
+
+.chckBox {
+    margin-bottom: 20px;
+}
+
+.chckBox #urine {
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+}
+
+.container .btns {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container .btns>* {
+    border: none;
+    box-shadow: 0px 4px 16px rgba(55, 81, 255, 0.29);
+    transition: .3s;
+}
+
+.container .btns>*:hover {
+    -webkit-font-smoothing: antialiased;
+    transform: perspective(0.1px) scale(1.1);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.container .btns>*:focus {
+    background-color: #daedfb;
+    color: white;
+}
+
+.container .btns .btn img {
+    max-width: 180px;
+}
+
+.price {
+    max-width: 1000px;
+    margin: 0px auto;
+    padding: 50px 10px;
+    font-size: 50px;
+    text-align: center;
+    color: black;
+    box-shadow: 0px 4px 16px rgba(55, 81, 255, 0.29);
+}
+
+.result {
+    margin: 80px;
+    font-size: 46px;
+    color: #008BE6;
+}
+
+@media(max-width: 1200px) {
+    .container .btns img {
+        width: 160px;
+    }
+}
+
+@media(max-width: 1100px) {
+    .container .btns img {
+        width: 130px;
+    }
+}
+
+@media(max-width: 1000px) {
+    .container ol .dimensions {
+        font-size: 18px;
+    }
+
+    .container .btns img {
+        width: 100px;
+    }
+}
+
+@media(max-width: 850px) {
+    .container ol .dimensions {
+        font-size: 16px;
+    }
+
+    .container .btns>* {
+        margin: 10px;
+    }
+
+    .container .btns {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-around;
+        margin: 15px;
+    }
+
+    .price {
+        font-size: 40px;
+    }
+
+    .result {
+        margin: 40px;
+        font-size: 40px;
+    }
+}
+
+@media(max-width: 715px) {
+    .container .btns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .container .btns .btn {
+        max-width: 180px;
+    }
+}
+
+@media(max-width: 712px) {
+    .container ol .dimensions {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 'width''height''urine';
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 670px) {
+    .container p {
+        font-size: 40px;
+    }
+
+    .container ol li {
+        margin: 50px;
+        font-size: 22px;
+    }
+
+    .container ol .dimensions {
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 550px) {
+    .container p {
+        font-size: 35px;
+    }
+
+    .price {
+        font-size: 20px;
+    }
+
+    .result {
+        margin: 26px;
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 470px) {
+    .container p {
+        font-size: 30px;
+    }
+
+    .height input,
+    .width input {
+        margin: 10px 0;
+    }
+}
+
+@media(max-width: 470px) {
+    .container p {
+        font-size: 25px;
+    }
+}

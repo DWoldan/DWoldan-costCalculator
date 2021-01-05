@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+        <p>Oblicz koszt prania dywanu</p>
+        <ol>
+            <li class="li-dimensions">Podaj wymiary</li>
+            <div class="dimensions">
+                <div class="width">
+                    Szerokość(w CM):<input type="number" id="width" style="width:80px;"><br>
+                </div>
+                <div class="height">
+                    Długość(w CM):<input type="number" id="height" style="width:80px;"><br>
+                </div>
+                <div class="chckBox"> 
+                    Dopłata do usunięcia moczu:<input type="checkbox" id="urine"> 
+                </div>
+            </div>
+            <li class="li-type">Wybierz gatunek</li>
+            <div class="btns">
+                <button class="synthetic btn"><img src="/img/syntetyk.png" alt="synthetic rug"></button>
+                <button class="wool btn"><img src="/img/welna.png" alt="wool rug"></button>
+                <button class="oriental btn"><img src="/img/orientalny.png" alt="oriental rug"></button>
+                <button class="double-sided btn"><img src="/img/obustronny.png" alt="double-sided rug"></button>
+            </div>
+            <li class="li-price">Podsumowanie</li>
+            <div class="price">Cena: <span class="result"></span></div>
+        </ol>
+    </div>
+
+    <script src="/js/app.js"></script>
+</body>
+</html>
